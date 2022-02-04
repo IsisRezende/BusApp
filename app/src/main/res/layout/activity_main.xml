@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/edit_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/tamanhoLogo"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="@dimen/tamanhoLogo"
+        android:src="@drawable/ic_bus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_Text"
+        android:hint="@string/login"
+        android:inputType="textEmailAddress"
+        android:drawableRight="@drawable/ic_email"
+        android:textSize="@dimen/tamanhoTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_logo"
+        />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/ic_eye"
+        android:hint="@string/senha"
+        android:inputType="numberPassword"
+        android:textSize="@dimen/tamanhoTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_entrar"
+        style= "@style/Button"
+        android:text="@string/entrar"
+        android:textSize="@dimen/tamanhoTitulo"
+        android:textColor="@color/white"
+        android:onClick="Entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        android:backgroundTint="@color/blue_dark"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

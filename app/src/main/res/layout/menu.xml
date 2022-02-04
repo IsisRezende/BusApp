@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context= ".Menu">
+
+    <TextView
+        android:id="@+id/titulo"
+        style="@style/Container_High"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tamanhoTopico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_usuario"
+        style="@style/Button"
+        android:layout_marginTop="100dp"
+        android:text="@string/usuario"
+        android:textSize="@dimen/tamanhoCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndtOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        android:textColor="@color/gray_dark"
+        android:backgroundTint="@color/gray"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_list"
+        style= "@style/Button"
+        android:text="@string/lista"
+        android:textSize="@dimen/tamanhoCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_usuario"
+        android:onClick="Lista"
+        android:textColor="@color/gray_dark"
+        android:backgroundTint="@color/gray"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_info"
+        style= "@style/Button"
+        android:text="@string/info"
+        android:textSize="@dimen/tamanhoCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_list"
+        android:onClick="Info"
+        android:textColor="@color/gray_dark"
+        android:backgroundTint="@color/gray"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_noticias"
+        style= "@style/Button"
+        android:text="@string/noticias"
+        android:textSize="@dimen/tamanhoCategoria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_info"
+        android:textColor="@color/gray_dark"
+        android:backgroundTint="@color/gray"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

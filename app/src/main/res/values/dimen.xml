@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name= "tamanhoTitulo">25sp</dimen>
+    <dimen name="tamanhoCategoria">20</dimen>
+    <dimen name="tamanhoText">15</dimen>
+    <dimen name="tamanhoTopico">35</dimen>
+    <dimen name= "tamanhoLogo">120sp</dimen>
+    <dimen name= "margem">30sp</dimen>
+
+</resources>

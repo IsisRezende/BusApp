@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BusApp</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+
+    <string name="usuario">Perfil</string>
+    <string name="lista">Lista</string>
+    <string name="info">Informações</string>
+    <string name="noticias">Noticias</string>
+
+
+    <string name="add">Adicionar</string>
+    <string name="remover">Remover</string>
+
+    <string name="tel"> (32)3422-2097</string>
+    <string name="info_email"> educacao@cataguases.mg.gov.br </string>
+    <string name="local"> Avenida Manoel Inácio Peixoto Filho </string>
+    <string name="horario"> 08:00 às 17:00</string>
+
+    <string name="nome">Nome</string>
+    <string name="matricula">Matricula</string>
+    <string name="cpf">CPF</string>
+    <string name="telefone"> Telefone</string>
+    <string name="endereço">Endereço</string>
+
+
+</resources>

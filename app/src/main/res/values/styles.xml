@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name= "Edit_Text">
+        <item name= "android:layout_width">match_parent</item>
+        <item name= "android:layout_height">wrap_content</item>
+        <item name= "android:layout_marginLeft">40dp</item>
+        <item name= "android:layout_marginRight">40dp</item>
+        <item name= "android:layout_marginTop">20dp</item>
+        <item name= "android:padding">20dp</item>
+        <item name= "android:background">@drawable/edit_text</item>
+    </style>
+
+    <style name= "Container_High">
+        <item name= "android:layout_width">match_parent</item>
+        <item name= "android:layout_height">120dp</item>
+        <item name= "android:padding">20dp</item>
+        <item name= "android:background">@drawable/container</item>
+    </style>
+
+    <style name= "Button">
+        <item name= "android:layout_width">match_parent</item>
+        <item name= "android:layout_height">wrap_content</item>
+        <item name= "android:padding">20dp</item>
+        <item name= "android:layout_marginLeft">40dp</item>
+        <item name= "android:layout_marginRight">40dp</item>
+        <item name= "android:layout_marginTop">20dp</item>
+        <item name= "android:background">@drawable/button</item>
+        <item name= "android:textStyle">bold</item>
+    </style>
+
+    <style name= "SmallButton">
+        <item name= "android:layout_width">140dp</item>
+        <item name= "android:layout_height">wrap_content</item>
+        <item name= "android:layout_marginLeft">40dp</item>
+        <item name= "android:layout_marginTop">20dp</item>
+        <item name= "android:padding">20dp</item>
+        <item name= "android:maxLength">30</item>
+        <item name= "android:background">@drawable/button</item>
+        <item name= "android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+
+    <style name= "Container">
+        <item name= "android:layout_width">match_parent</item>
+        <item name= "android:layout_marginLeft">40dp</item>
+        <item name= "android:layout_marginRight">40dp</item>
+        <item name= "android:layout_marginTop">20dp</item>
+        <item name= "android:padding">20dp</item>
+        <item name= "android:background">@drawable/button</item>
+        <item name= "android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/gray</item>
+    </style>
+
+    <style name= "ItemPerfil">
+        <item name= "android:layout_width">match_parent</item>
+        <item name= "android:layout_marginLeft">40dp</item>
+        <item name= "android:layout_marginRight">40dp</item>
+        <item name= "android:padding">20dp</item>
+        <item name= "android:background">@drawable/button</item>
+        <item name= "android:textStyle">bold</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">@dimen/tamanhoText</item>
+    </style>
+
+    <style name= "ContainerPerfil">
+        <item name= "android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name= "android:layout_marginLeft">40dp</item>
+        <item name= "android:layout_marginRight">40dp</item>
+        <item name= "android:padding">20dp</item>
+        <item name= "android:background">@drawable/button</item>
+        <item name= "android:textStyle">bold</item>
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">@dimen/tamanhoText</item>
+
+    </style>
+
+</resources>
