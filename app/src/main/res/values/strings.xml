@@ -20,9 +20,13 @@
 
     <string name="nome">Nome</string>
     <string name="matricula">Matricula</string>
-    <string name="cpf">CPF</string>
     <string name="telefone"> Telefone</string>
     <string name="endereço">Endereço</string>
+    <string name="salvar">Salvar</string>
+    <string name="sair">Sair</string>
 
+    <string name="cadastro">Clique para cadastrar</string>
+    <string name="cadastrar">cadastrar</string>
+    <string name="cad_titulo">Cadastre-se</string>
 
 </resources>

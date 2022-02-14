@@ -2,8 +2,9 @@
 <resources>
     <dimen name= "tamanhoTitulo">25sp</dimen>
     <dimen name="tamanhoCategoria">20</dimen>
-    <dimen name="tamanhoText">15</dimen>
-    <dimen name="tamanhoTopico">35</dimen>
+    <dimen name="tamanhoText">14</dimen>
+    <dimen name="tamanhoPerfil">10</dimen>
+    <dimen name="tamanhoTopico">32</dimen>
     <dimen name= "tamanhoLogo">120sp</dimen>
     <dimen name= "margem">30sp</dimen>
 

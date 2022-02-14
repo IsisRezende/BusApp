@@ -9,13 +9,14 @@
     <TextView
         android:id="@+id/perfil"
         style="@style/Container_High"
+        android:layout_width="413dp"
+        android:layout_height="80dp"
         android:text="@string/usuario"
         android:textColor="@color/white"
         android:textSize="@dimen/tamanhoTopico"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/nome"
         style="@style/ItemPerfil"
@@ -35,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@id/nome" />
 
     <TextView
-        android:id="@+id/matricula"
+        android:id="@+id/edit_login"
         style="@style/ItemPerfil"
         android:text="@string/matricula"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,25 +51,25 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/matricula"/>
+        app:layout_constraintTop_toBottomOf="@id/edit_login"/>
 
     <TextView
-        android:id="@+id/cpf"
+        android:id="@+id/edit_senha"
         style="@style/ItemPerfil"
-        android:text="@string/cpf"
+        android:text="@string/senha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ed_matricula"
         />
 
     <EditText
-        android:id="@+id/ed_cpf"
+        android:id="@+id/ed_senha"
         style="@style/ContainerPerfil"
         android:inputType="text"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cpf"/>
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"/>
 
     <TextView
         android:id="@+id/tel"
@@ -76,7 +77,7 @@
         android:text="@string/telefone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_cpf"
+        app:layout_constraintTop_toBottomOf="@id/ed_senha"
         />
 
     <EditText
@@ -104,6 +105,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/endereço"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/salva_perfil"
+        style="@style/SmallButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="120dp"
+        android:backgroundTint="@color/blue_dark"
+        android:gravity="center_horizontal"
+        android:text="@string/salvar"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_endereço" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

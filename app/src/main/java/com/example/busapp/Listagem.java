@@ -13,11 +13,12 @@ import java.util.ArrayList;
 
 public class Listagem extends AppCompatActivity {
 
-    EditText et;
+    EditText et_nome;
     Button btAdd;
     Button btRemove;
     ListView list;
     ArrayList<String> lista;
+
     private Object view;
 
     @Override
@@ -25,38 +26,39 @@ public class Listagem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listagem);
 
-        et= findViewById(R.id.novo_nome);
+        et_nome= findViewById(R.id.ed_nome);
         btAdd= findViewById(R.id.bt_add);
         btRemove= findViewById(R.id.bt_remove);
         list = findViewById(R.id.lv);
 
         lista= new ArrayList<String>();
-        ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1,lista);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(Listagem.this,R.layout.listagem,lista);
         list.setAdapter(adapter);
 
         btAdd.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void add(View view){
-                    String nome= Interger.parseString(et.getText().toString());
+            public void onClick(View v) {
+                String nome=et_nome.getText().toString();
                 lista.add(nome);
                 adapter.notifyDataSetChanged();
-
             }
         });
 
         btRemove.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void remove(View view){
-               String nome= Interger.parseString(et.getText().toString());
+            public void onClick(View v) {
+                String nome=et_nome.getText().toString();
                 lista.remove(nome);
                 adapter.notifyDataSetChanged();
-
             }
         });
-
     }
-}
+    public void IniciarComponentes(){
+        et_nome= findViewById(R.id.ed_nome);
+        btAdd= findViewById(R.id.bt_add);
+        btRemove= findViewById(R.id.bt_remove);
+        list = findViewById(R.id.lv);
+    }
 }

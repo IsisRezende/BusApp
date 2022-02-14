@@ -22,11 +22,29 @@
         style="@style/Container"
         android:layout_height="480dp"
         android:hint="Escreva aqui..."
-        android:textSize="@dimen/tamanhoText"
+        android:textSize="18dp"
         android:gravity="start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/noticias"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/salvar_noticias"
+        style="@style/SmallButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="120dp"
+        android:backgroundTint="@color/blue_dark"
+        android:gravity="center_horizontal"
+        android:text="@string/salvar"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_noticias"
         />
 
 

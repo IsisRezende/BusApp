@@ -37,8 +37,7 @@
         <item name= "android:maxLength">30</item>
         <item name= "android:background">@drawable/button</item>
         <item name= "android:textStyle">bold</item>
-        <item name="android:backgroundTint">@color/gray</item>
-        <item name="android:textColor">@color/gray_dark</item>
+
     </style>
 
     <style name= "Container">
@@ -73,7 +72,7 @@
         <item name= "android:textStyle">bold</item>
         <item name="android:backgroundTint">@color/gray</item>
         <item name="android:gravity">start</item>
-        <item name="android:textSize">@dimen/tamanhoText</item>
+        <item name="android:textSize">@dimen/tamanhoPerfil</item>
 
     </style>
 

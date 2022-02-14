@@ -5,32 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".Cadastro">
 
-    <ImageView
-        android:id="@+id/edit_logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginLeft="@dimen/tamanhoLogo"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="30dp"
-        android:layout_marginRight="@dimen/tamanhoLogo"
-        android:src="@drawable/ic_bus"
+
+    <TextView
+        android:id="@+id/titulo_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cad_titulo"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="60dp"/>
+
+    <EditText
+        android:id="@+id/ed_nome"
+        style="@style/Edit_Text"
+        android:hint="@string/nome"
+        android:inputType="text"
+        android:textSize="@dimen/tamanhoTitulo"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo_cadastro"
         />
 
     <EditText
-        android:id="@+id/edit_email"
+        android:id="@+id/edit_login"
         style="@style/Edit_Text"
         android:hint="@string/login"
-        android:inputType="textEmailAddress"
+        android:inputType="number"
         android:drawableRight="@drawable/ic_email"
         android:textSize="@dimen/tamanhoTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_logo"
+        app:layout_constraintTop_toBottomOf="@id/ed_nome"
         />
 
     <EditText
@@ -42,13 +53,13 @@
         android:textSize="@dimen/tamanhoTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        app:layout_constraintTop_toBottomOf="@id/edit_login"
         />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_entrar"
         style= "@style/Button"
-        android:text="@string/entrar"
+        android:text="@string/cadastrar"
         android:textSize="@dimen/tamanhoTitulo"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,17 +68,7 @@
         android:backgroundTint="@color/blue_dark"
         />
 
-    <TextView
-        android:id="@+id/tela_cadastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180dp"
-        android:text="@string/cadastro"
-        android:textColor="@color/white"
-        android:textSize="@dimen/tamanhoTitulo"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_entrar" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
