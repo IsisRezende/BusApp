@@ -7,13 +7,14 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
-public class Menu extends AppCompatActivity {
+public class Menu<Instance> extends AppCompatActivity {
 
     public AppCompatButton bt_perfil;
     public AppCompatButton bt_lista;
     public AppCompatButton bt_info;
     public AppCompatButton bt_noticias;
     public AppCompatButton bt_sair;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,8 @@ public class Menu extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+               Intent Intent= new Intent(Menu.this, MainActivity.class);
+               startActivity(Intent);
             }
         });
     }

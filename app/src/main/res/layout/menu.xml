@@ -38,11 +38,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bt_usuario"
-        android:onClick="Lista"
         android:textColor="@color/gray_dark"
         android:backgroundTint="@color/gray"
-
         />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_info"
         style= "@style/Button"
@@ -51,11 +50,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bt_list"
-        android:onClick="Info"
         android:textColor="@color/gray_dark"
         android:backgroundTint="@color/gray"
-
         />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_noticias"
         style= "@style/Button"
@@ -67,6 +65,7 @@
         android:textColor="@color/gray_dark"
         android:backgroundTint="@color/gray"
         />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_sair"
         style="@style/Button"

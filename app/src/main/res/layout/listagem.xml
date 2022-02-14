@@ -27,42 +27,34 @@
         android:layout_width="match_parent"
         android:layout_height="450dp" />
 
-    <EditText
-        android:id="@+id/novo_nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="@dimen/margem"
-        android:layout_marginLeft="@dimen/margem"
-        android:maxLength="35"
-        android:hint= "Insira o nome"
-        >
-        ,
-    </EditText>
 
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/bt_add"
-            style="@style/SmallButton"
-            android:layout_gravity="left"
-            android:backgroundTint="@color/gray"
-            android:text="@string/add"
-            android:textColor="@color/gray_dark"
-            android:textSize="@dimen/tamanhoText"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add"
+        style= "@style/SmallButton"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tamanhoText"
+        android:backgroundTint="@color/blue_dark"
+        android:text="@string/add"
+        android:layout_marginTop="10dp"
 
-        <Button
-             android:id="@+id/bt_remove"
-             style="@style/SmallButton"
-             android:layout_gravity="right"
-             android:text="@string/remover"
-             android:textSize="@dimen/tamanhoText" />
-    </LinearLayout>
+         />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_remove"
+        style="@style/SmallButton"
+        android:backgroundTint="@color/blue_dark"
+        android:text="@string/remover"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tamanhoText"
+        android:layout_marginBottom="10dp"
+
+        /></LinearLayout>
 
 
 </LinearLayout>
