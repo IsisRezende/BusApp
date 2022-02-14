@@ -12,13 +12,15 @@
         android:id="@+id/titulo_cadastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
         android:text="@string/cad_titulo"
         android:textColor="@color/white"
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="60dp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/ed_nome"
@@ -57,7 +59,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt_entrar"
+        android:id="@+id/bt_cadastrar"
         style= "@style/Button"
         android:text="@string/cadastrar"
         android:textSize="@dimen/tamanhoTitulo"

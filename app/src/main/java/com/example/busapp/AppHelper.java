@@ -14,19 +14,21 @@ public final class AppHelper extends SQLiteOpenHelper {
 
    private static final String SQL_CREATE_USUARIOS=
            "CREATE TABLE IF EXISTS"+ AppContract.Usuario.TABLE_NAME + " ("+
-                   AppContract.Usuario.TABLE_MATRICULA+ " INTEGER PRIMARY KEY,"+
-                   AppContract.Usuario.TABLE_SENHA+ " TEXT," +
-                   AppContract.Usuario.TABLE_TELEFONE+" TEXT,"+
-                   AppContract.Usuario.TABLE_ENDEREÇO+" TEXT)";
+                   AppContract.Usuario.COLUNA_NOME+ " TEXT," +
+                   AppContract.Usuario.COLUNA_MATRICULA+ " INTEGER PRIMARY KEY,"+
+                   AppContract.Usuario.COLUNA_SENHA+ " TEXT," +
+                   AppContract.Usuario.COLUNA_TELEFONE+" TEXT,"+
+                   AppContract.Usuario.COLUNA_ENDEREÇO+" TEXT)";
 
     private static final String SQL_DELETE_USUARIOS=
             "DROP TABLE IF EXISTS"+ AppContract.Usuario.TABLE_NAME ;
 
-    private static String SQL_CREATE_NOTICIA=
-            "CREATE TABLE IF EXISTS"+ AppContract.Noticias.TABLE_NOTICIAS;
+    private static String SQL_CREATE_NOTICIAS=
+            "CREATE TABLE IF EXISTS"+ AppContract.Noticias.TABLE_NAME+
+                    AppContract.Noticias.COLUNA_NOTICIA+ " TEXT)" ;
 
-    private static String SQL_DELETE_NOTICIA=
-            "DROP TABLE IF EXISTS"+ AppContract.Noticias.TABLE_NOTICIAS ;
+    private static String SQL_DELETE_NOTICIAS=
+            "DROP TABLE IF EXISTS"+ AppContract.Noticias.TABLE_NAME ;
 
     public static final int DATABASE_VERSION= 1;
     public static final String DATABASE_NAME= "App.db";
@@ -40,13 +42,13 @@ public final class AppHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
       db.execSQL(SQL_CREATE_USUARIOS);
-      db.execSQL(SQL_CREATE_NOTICIA);
+      db.execSQL(SQL_CREATE_NOTICIAS);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL(SQL_DELETE_USUARIOS);
-        db.execSQL(SQL_DELETE_NOTICIA);
+        db.execSQL(SQL_DELETE_NOTICIAS);
         onCreate(db);
     }
 

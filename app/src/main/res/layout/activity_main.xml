@@ -25,7 +25,7 @@
         android:id="@+id/edit_email"
         style="@style/Edit_Text"
         android:hint="@string/login"
-        android:inputType="textEmailAddress"
+        android:inputType="number"
         android:drawableRight="@drawable/ic_email"
         android:textSize="@dimen/tamanhoTitulo"
         app:layout_constraintEnd_toEndOf="parent"

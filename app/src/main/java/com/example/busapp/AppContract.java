@@ -7,14 +7,16 @@ public final class AppContract {
 
     public static class Usuario implements BaseColumns {
         public static final String TABLE_NAME= "Usuario";
-        public static final String TABLE_MATRICULA= "Matricula";
-        public static final String TABLE_SENHA= "Senha";
-        public static final String TABLE_TELEFONE= "Telefone";
-        public static final String TABLE_ENDEREÇO= "Endereço";
+        public static final String COLUNA_NOME= "Nome";
+        public static final String COLUNA_MATRICULA= "Matricula";
+        public static final String COLUNA_SENHA= "Senha";
+        public static final String COLUNA_TELEFONE= "Telefone";
+        public static final String COLUNA_ENDEREÇO= "Endereço";
     }
 
     public static class Noticias implements BaseColumns {
-        public static final String TABLE_NOTICIAS= "Noticias";
+        public static final String TABLE_NAME= "Noticias";
+        public static final String COLUNA_NOTICIA= "Conteúdo";
 
     }
 }
